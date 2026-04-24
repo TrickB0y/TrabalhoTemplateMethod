@@ -25,4 +25,6 @@ public abstract class Conta {
         this.saldo -= valor;
     }
 
+    public abstract double gerarFatura();
+
 }

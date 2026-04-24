@@ -9,4 +9,9 @@ public class ContaPoupanca extends Conta {
         depositar(rendimentos - this.saldo);
         return rendimentosDoMes;
     }
+
+    @Override
+    public double gerarFatura() {
+        return 3.0;
+    }
 }

@@ -18,4 +18,9 @@ public class ContaCorrente extends Conta {
     public void receberPix(double valor) {
         this.saldo = this.saldo + valor;
     }
+
+    @Override
+    public double gerarFatura() {
+        return 12.0;
+    }
 }

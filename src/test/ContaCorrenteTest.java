@@ -36,4 +36,11 @@ public class ContaCorrenteTest {
         conta.receberPix(200);
         assertEquals(200, conta.getSaldo());
     }
+
+    @Test
+    void deveRetornarValorCorretoDaFatura() {
+        ContaCorrente conta = new ContaCorrente();
+        conta.depositar(500);
+        assertEquals(12.0, conta.gerarFatura());
+    }
 }

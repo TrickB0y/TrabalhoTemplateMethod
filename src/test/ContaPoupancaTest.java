@@ -27,4 +27,11 @@ public class ContaPoupancaTest {
         conta.depositar(1000);
         assertEquals("Valor guardado: 1000.0 com 1.0% ao mês. rendimentos: 10.0", conta.emitirRendimentosDoMes());
     }
+
+    @Test
+    void deveRetornarValorCorretoDaFatura() {
+        ContaPoupanca conta = new ContaPoupanca();
+        conta.depositar(500);
+        assertEquals(3.0, conta.gerarFatura());
+    }
 }
